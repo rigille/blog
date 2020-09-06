@@ -1,0 +1,25 @@
+baseURL = "impression28.github.io"
+languageCode = "pt-br"
+title = "dessages"
+theme = "hugo-theme-codex"
+
+
+[params]
+twitter = "https://twitter.com/impression28"
+github = "https://github.com/impression28"
+iconOrder = ["GitHub", "Twitter"]
+
+[[menu.main]]
+identifier = "sobre"
+name = "sobre"
+title = "sobre"
+url = "/"
+
+[[menu.main]]
+identifier = "blog"
+name = "blog"
+title = "blog"
+url = "/blog"
+
+[params.colors]
+fancy = "#ffaa00"
