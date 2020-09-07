@@ -1,4 +1,4 @@
-baseURL = "impression28.github.io"
+baseURL = "https://impression28.github.io"
 languageCode = "pt-br"
 title = "dessages"
 theme = "hugo-theme-codex"
