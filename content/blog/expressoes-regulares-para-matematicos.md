@@ -16,7 +16,7 @@ felizmente existem as **expressões regulares**. elas dão descrições prática
 
 ## caracteres, alfabetos, strings e linguagens
 
-a parte mais básica da nossa discussão são os **caracteres**. não vamos dar uma definição muito precisa, seria inútil, mas espalhamos vários exemplos pelo texto. qualquer coisa pode ser um caractere se você tiver coragem o bastante.
+a parte mais básica da nossa discussão são os **caracteres**. não vamos dar uma definição muito precisa, seria inútil, mas já espalhamos vários exemplos pelo texto. tudo pode ser um caractere se você tiver a bravura necessária.
 
 um **alfabeto** é um conjunto finito de caracteres. por exemplo o verso "Vozes veladas veludosas vozes" usa o alfabeto
 
@@ -36,4 +36,31 @@ $$L_0 = \left\\{ \` \` 00", \` \` 00000" \right\\}$$
 $$L_1 = \left\\{ \` \` 1", \` \` 01", \` \` 001" \right\\}$$
 $$L_2 = \left\\{ \` \` 00", \` \` 010", \` \` 0110", \ldots, \` \` 0111110", \ldots \right\\}$$
 
-onde $L_2$ é o conjunto das strings que têm $0$ nas extremidades e $1$ no interior. diferente de tudo que definimos até agora, linguagens não precisam ser finitas. a $L_2$ é uma **linguagem infinita**, enquanto $L_0$ e $L_1$ são **linguagens finitas**.
+onde $L_2$ é o conjunto das strings que têm $0$ nas extremidades e $1$ no interior. diferente de tudo que definimos até agora, linguagens não precisam ser finitas: $L_2$ é uma **linguagem infinita**, enquanto $L_0$ e $L_1$ são **linguagens finitas**.
+
+## concatenação de strings
+
+você pode **concatenar** duas strings colocando uma no final da outra.
+
+$$\mathrm{ \` \`para" \cdot \` \` quedas" = \` \` paraquedas"}$$
+
+a ordem interfere no resultado, afinal
+
+$$\mathrm{ \` \`te" \cdot \` \` mor" = \` \` temor"}$$
+
+$$\mathrm{ \` \`mor" \cdot \` \` te" = \` \` morte"}$$
+
+mas os parênteses não
+
+$$\mathrm{ \left( \` \`in" \cdot \` \`feliz" \right) \cdot \` \`mente" = \` \`in" \cdot \left( \` \`feliz" \cdot \` \`mente" \right) }$$
+
+$$\mathrm{ \left( \` \`infeliz" \right) \cdot \` \`mente" = \` \`in" \cdot \left( \` \`felizmente" \right) }$$
+
+$$\mathrm{  \` \`infelizmente" = \` \`infelizmente" }$$
+
+(ermo moer
+brado dobra
+dever verde
+cota taco
+temor morte
+louco colou)
