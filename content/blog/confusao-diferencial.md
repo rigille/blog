@@ -10,7 +10,7 @@ math: true
 toc: false
 ---
 
-sempre achei os materiais de geometria diferencial muito difíceis de entender, por algum motivo… elusivo demais para explicar. agora acredito que sei o que é e não é o conteúdo, é a notação.
+sempre achei os materiais de geometria diferencial muito difíceis de entender por algum motivo… elusivo demais para explicar. agora acredito que sei o que é e não é o conteúdo, é a notação.
 
 matemáticos naturalmente descartam trechos repetitivos das equações por motivos de preguiça de escrever. isso, combinando com outros acidentes históricos, produz expressões excepcionalmente concisas e ambíguas. um leitor experiente consegue solucionar as ambiguidades e completar as lacunas, como fazemos sempre que conversamos. um iniciante, por outro lado, está em tanta condição de fazer isso quanto um et está em condições de planejar uma ceia de natal.
 
@@ -40,7 +40,7 @@ os argumentos de $E$ foram omitidos.
 
 o que o autor realmente quis dizer é mais algo como
 
-$$E(u, v) := (t \mapsto E(u(t), v(t))$$
+$$E(u, v) := (t \mapsto E(u(t), v(t)))$$
 
 isso sim é $\mathbb{R}\rightarrow\mathbb{R}$ e faz sentido de se multiplicar com $(u')^2$. de onde saíram o $u$ e o $v$? você deveria simplesmente saber. o $F$ e o $G$ também querem dizer respectivamente $F(u, v)$ e $G(u, v)$.
 
