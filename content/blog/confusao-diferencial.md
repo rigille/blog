@@ -34,7 +34,7 @@ $$f + g := (t \mapsto f(t) + g(t))$$
 
 nada de problemático até agora, já sabemos que cada uma das parcelas  $E\left( u' \right)^2$, $2Fu'v'$ e $G\left( v' \right)^2$ são funções $\mathbb{R} \rightarrow \mathbb{R}$.
 
-aqui os problemas começam. seria muito fácil pensar que na primeira expressão estamos pegando uma função $u'$[^3] compondo com $E$ e elevando o resultado ao quadrado. ou talvez o $E$ estivesse sendo multiplicado com $(u')^2$? de fato é uma multiplicação, mas o $u'$ não é $\mathbb{R} \rightarrow \mathbb{R}$ ele é $\mathbb{R} \rightarrow \mathbb{R}^3$. estamos pegando o vetor no $\mathbb{R}^3$, fazendo o produto escalar dele com si próprio e multiplicando o resultado com $E$. Mas o que é $E$? Surpresa! $E$ é uma função $\mathbb{R}^2 \rightarrow \mathbb{R}$. Mas $(u')^2$ é do tipo $\mathbb{R}\rightarrow\mathbb{R}$ como multiplicaríamos isso com uma função $\mathbb{R}^2\rightarrow\mathbb{R}$? isso não faz sentido…
+aqui os problemas começam. seria muito fácil pensar que na primeira expressão estamos pegando uma função $u'$[^3] compondo com $E$ e elevando o resultado ao quadrado. ou talvez o $E$ estivesse sendo multiplicado com $(u')^2$? de fato é uma multiplicação. Mas o que é $E$? Surpresa! $E$ é uma função $\mathbb{R}^2 \rightarrow \mathbb{R}$. Mas $(u')^2$ é do tipo $\mathbb{R}\rightarrow\mathbb{R}$ como multiplicaríamos isso com uma função $\mathbb{R}^2\rightarrow\mathbb{R}$? isso não faz sentido…
 
 os argumentos de $E$ foram omitidos.
 
