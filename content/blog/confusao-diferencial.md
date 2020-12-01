@@ -1,6 +1,6 @@
 ---
 title: "confusão diferencial"
-date: 2020-09-31T19:07:00-03:00
+date: 2020-09-30T16:13:39-03:00
 slug: ""
 description: ""
 keywords: [geometria-diferencial]
