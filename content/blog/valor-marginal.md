@@ -14,9 +14,7 @@ o dinheiro funciona como dinheiro em parte por ser tão genérico. na padaria, o
 
 por outro lado, quanto mais dinheiro temos, menos ele vale. os 100 reais que você ganha quando não tem nada, eles não são idênticos aos 100 reais ganhos com 1 milhão de reais na conta? então deveriam valer o mesmo. parece contradição, mas é apenas uma consequência inevitável do que dissemos.
 
-os primeiros reais podem satisfazer várias necessidades, algumas grandes, outras menores. as necessidades prioritárias — primeiras a serem satisfeitas — são as maiores. por serem iguais, os reais que vêm depois não podem satisfazer nada além do que os primeiros podiam[^1], com a diferença que as maiores necessidades já foram satisfeitas.
-
-nosso erro no segundo parágrafo foi achar que o valor é uma característica do bem, quando ele depende também de quem é que está avaliando.
+os primeiros reais podem satisfazer várias necessidades, algumas grandes, outras menores. as necessidades prioritárias — primeiras a serem satisfeitas — são as maiores. justamente por serem iguais, os reais que vêm depois não podem satisfazer nada além do que os primeiros podiam[^1], com a diferença que as maiores necessidades já foram satisfeitas.
 
 $$.$$
 
