@@ -1,5 +1,5 @@
 ---
-title: "nem todos os reais são iguais"
+title: "os reais mais valiosos"
 date: 2020-11-30T21:22:00-03:00
 slug: "menos ele vale, e posso provar"
 description: "menos ele vale, e posso provar"
@@ -10,8 +10,14 @@ math: true
 toc: false
 ---
 
-o dinheiro funciona como dinheiro em parte por ser tão genérico. o real que você recebe de troco na padaria não é muito diferente do real que você receberia de troco comprando água de coco na praia, ou no sex shop, tanto faz. independentemente da origem você pode gastá-lo mais ou menos das mesmas formas, e isso te livra do embolamento mental que seria pensar quais são os reais certos para gastar, quais os reais certos para ganhar.
+o dinheiro funciona como dinheiro em parte por ser tão genérico. na padaria, o real que você recebe de troco não é muito diferente do troco que receberia comprando água de coco na praia, ou no sex shop, tanto faz. independentemente da origem você pode gastá-lo mais ou menos das mesmas formas, e isso te livra do embolamento mental que seria pensar quais são os reais certos para gastar, quais os reais certos para ganhar.
 
-por outro lado quanto mais dinheiro temos, menos ele parece valer. os 100 reais que você ganha quando não tem nada, eles não são idênticos aos 100 reais ganhos com 1 milhão de reais na conta? então deveriam valer o mesmo. parece que temos uma contradição. parece. não temos. e mais: um fato é consequência necessária do outro.
+por outro lado, quanto mais dinheiro temos, menos ele vale. os 100 reais que você ganha quando não tem nada, eles não são idênticos aos 100 reais ganhos com 1 milhão de reais na conta? então deveriam valer o mesmo. parece contradição, mas é apenas uma consequência inevitável do que dissemos.
 
-em teoria temos os mesmos motivos para valorizar as duas quantias: elas poderiam satisfazer as mesmas necessidades em teoria. 
+os primeiros reais podem satisfazer várias necessidades, algumas grandes, outras menores. as necessidades prioritárias — primeiras a serem satisfeitas — são as maiores. por serem iguais, os reais que vêm depois não podem satisfazer nada além do que os primeiros podiam[^1], com a diferença que as maiores necessidades já foram satisfeitas.
+
+nosso erro no segundo parágrafo foi achar que o valor é uma característica do bem, quando ele depende também de quem é que está avaliando.
+
+$$.$$
+
+[^1]: não deixamos muito claro, mas estamos assumindo que não há nada que você possa atingir com 2 reais que não possa atingir com cada real separadamente. digamos que você está comprando a granel…
