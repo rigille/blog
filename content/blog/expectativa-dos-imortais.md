@@ -1,11 +1,11 @@
 ---
 title: "a expectativa de vida dos imortais"
-date: 2020-09-06T16:13:39-03:00
+date: 2021-01-22T21:50:00-03:00
 slug: ""
-description: ""
+description: "menor do que você imagina"
 keywords: []
-draft: true
-tags: []
+draft: false
+tags: [matemática, probabilidade]
 math: true
 toc: false
 ---
@@ -31,7 +31,7 @@ vamos simplificar mais ainda e considerar que a probabilidade de morrer é const
 
 $$\sum_{n=0}^\infty n \cdot \mathrm{probabilidade\ de\ viver\ exatamente}\ n\ \mathrm{anos}$$
 
-e quanto é $\mathrm{probabilidade\ de\ viver\ exatamente}\ n\ \mathrm{anos}$? $\alpha$ é a probabilidade de viver exatamente $0$ anos. a de viver exatamente 1 é a probabilidade de sobreviver o primeiro ano e morrer no segundo, então $(1-\alpha)\cdot\alpha$.
+e quanto é $\mathrm{probabilidade\ de\ viver\ exatamente}\ n\ \mathrm{anos}$? a probabilidade de viver exatamente $0$ anos é $\alpha$. a de viver exatamente 1 é a probabilidade de sobreviver o primeiro ano e morrer no segundo, então $(1-\alpha)\cdot\alpha$.
 
 no geral
 
