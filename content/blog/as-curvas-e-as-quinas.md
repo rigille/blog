@@ -1,8 +1,8 @@
 ---
 title: "as curvas e as quinas"
 date: 2021-02-07T17:43:00-03:00
-slug: "se é diferenciável não tem quinas, eles disseram."
-description: ""
+slug: "as curvas e as quinas"
+description: "se é diferenciável não tem quinas, eles disseram."
 keywords: [geometria-diferencial]
 draft: false
 tags: [matematica, geometria-diferencial]
