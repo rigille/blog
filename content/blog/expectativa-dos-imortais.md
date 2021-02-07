@@ -5,7 +5,7 @@ slug: ""
 description: "menor do que você imagina"
 keywords: []
 draft: false
-tags: [matemática, probabilidade]
+tags: [matematica, probabilidade]
 math: true
 toc: false
 ---
