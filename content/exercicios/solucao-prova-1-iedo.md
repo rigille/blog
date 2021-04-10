@@ -4,7 +4,7 @@ date: 2021-04-04T21:50:00-03:00
 slug: ""
 description: ""
 keywords: []
-draft: true
+draft: false
 tags: [matematica, algebra linear]
 math: true
 toc: false
