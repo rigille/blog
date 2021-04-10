@@ -21,5 +21,11 @@ name = "blog"
 title = "blog"
 url = "/blog"
 
+[[menu.main]]
+identifier = "exercicios"
+name = "exercicios"
+title = "exercicios"
+url = "/exercicios"
+
 [params.colors]
 fancy = "#ffaa00"
