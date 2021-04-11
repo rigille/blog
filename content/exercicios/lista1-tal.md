@@ -18,13 +18,13 @@ toc: true
 14 - guilherme (aula 2, 7:51)
 -->
 
-# Questão 3
+## Questão 3
 
-## Enunciado
+### Enunciado
 
 Seja $A$ uma matriz real simétrica, $k$ um número inteiro positivo. Mostre que se $A^k \cdot v = 0$ para $v \in \mathbb{R}^k$. Então $A \cdot v = 0$.
 
-## Resolução
+### Resolução
 
 A questão nos pede para mostrar que
 
@@ -91,3 +91,19 @@ Por fim, aplicamos a hipótese de indução $P1.0$ para concluir
 $$A \cdot v = 0$$
 
 o que conclui a demonstração de $P1$. $\blacksquare$
+
+## Questão 29
+
+### Enunciado
+
+Encontre um espaço vetorial $V$ com produto interno e um subespaço $W$ tais que $W^{\perp \perp} \neq W$
+
+### Resolução
+
+No caso em que $V$ tem finitas dimensões $W^{\perp \perp} = W$. No geral suspeito que, infelizmente, não seja possível construir um vetor $v$ tal que $v \in W^{\perp \perp}$ e $v \not\in W$. Mas podemos mostrar que ele existe.
+
+Vamos fazer de $V$ o espaço de sequências de números reais com quadrado somável. Nosso subespaço $W$ será o conjunto das sequências com apenas finitos termos não-nulos. Pra todo vetor $v \in V$, podemos definir o funcional linear $v^* : W \rightarrow \mathbb{R}$ tal que  $v^*(u) = \langle v, u \rangle$. Além disso sempre que $u \neq v$ vale $u^* \neq v^*$. Afinal se $u \neq v$ então existe um termo das sequências que discorda, e se considerarmos $w \in W$ a sequência que é $1$ neste termo e zero no resto, teremos $v^*(w) \neq u^*(w)$.
+
+Existe uma transformação linear injetiva $v \mapsto v^*$ de $V$ para $W^{\perp}$. Assumindo o axioma da escolha, existe uma base para $V$. Qual a cardinalidade dessa base? Por um lado os subespaços de $V$ com base enumerável são uma união enumerável de conjuntos fechados com o interior vazio, nomeadamente a união dos espaços gerados pelos $n$ primeiros vetores da base. Por outro, $V$ é um espaço métrico completo, então o Teorema da Categoria de Baire nos diz que ele não pode ser a união enumerável de conjuntos fechados com interior vazio. Não resta outra opção para a base de $V$, ela deverá ser não-enumerável.
+
+Em $W^{\perp \perp}$, o isomorfismo $v \mapsto v^*$ nos dá um conjunto LD de $W^{\perp \perp}$ a partir da base de $V$. Daí que a dimensão de $W^{\perp \perp}$ é não-enumerável, e portanto não existe bijeção nem muito menos isomorfismo entre $W^{\perp \perp}$ e $W$.
