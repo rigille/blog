@@ -107,3 +107,38 @@ Vamos fazer de $V$ o espaço de sequências de números reais com quadrado somá
 Existe uma transformação linear injetiva $v \mapsto v^*$ de $V$ para $W^{\perp}$. Assumindo o axioma da escolha, existe uma base para $V$. Qual a cardinalidade dessa base? Por um lado os subespaços de $V$ com base enumerável são uma união enumerável de conjuntos fechados com o interior vazio, nomeadamente a união dos espaços gerados pelos $n$ primeiros vetores da base. Por outro, $V$ é um espaço métrico completo, então o Teorema da Categoria de Baire nos diz que ele não pode ser a união enumerável de conjuntos fechados com interior vazio. Não resta outra opção para a base de $V$, ela deverá ser não-enumerável.
 
 Em $W^{\perp \perp}$, o isomorfismo $v \mapsto v^*$ nos dá um conjunto LD de $W^{\perp \perp}$ a partir da base de $V$. Daí que a dimensão de $W^{\perp \perp}$ é não-enumerável, e portanto não existe bijeção nem muito menos isomorfismo entre $W^{\perp \perp}$ e $W$.
+
+## Questão 33
+
+### Enunciado
+
+Quais são os possíveis autovalores reais de um operador linear $T$ atuando num espaço de dimensão finita tal que $T$ e $T^2$ possuem os mesmos autovalores reais? Dê um exemplo mostrando que a mesma resposta não vale em espaços de dimensão infinita.
+
+### Resolução
+
+Pode ser que tanto $T$ quanto $T^2$ não tenham autovalores reais. Como no caso de $T: \mathbb{R}^2 \rightarrow \mathbb{R}^2$ dado pela matriz
+
+$$
+\begin{bmatrix}
+1 & -1 \\\\
+1 &  1 \\\\
+\end{bmatrix}
+$$
+
+Porêm se $T$ tem um autovalor $\lambda$ associado a um autovetor $v$, então $T^2$ tem o autovalor $\lambda^2$ pois
+
+$$T^2 v = \lambda T v = \lambda^2 v$$
+
+Mas os autovalores de $T^2$ são autovalores de $T$, então $\lambda^2$ é autovalor de $T$. Fazendo indução nesse raciocínio, concluímos que a existência de $\lambda$ como autovalor implica na existência de $\lambda^{2^k}$ para todo $k\in\mathbb{N}$. Quando $|\lambda| = 1$ não tem medo não, esse conjunto tem tamanho no máximo $2$. De fato segue abaixo um exemplo em que o conjunto tem tamanho exatamente $2$.
+
+$$
+\begin{bmatrix}
+-1 & 0 & 0 \\\\
+0 &  0 & -1 \\\\
+0 &  1 & 0 \\\\
+\end{bmatrix}
+$$
+
+Quando $|\lambda| \neq 1$ o conjunto é infinito. Considerando que um operador linear num espaço vetorial finito tem finitos autovalores, temos um absurdo.
+
+No caso de espaços com infinitas dimensões isso pode acontecer. Por exemplo, a derivada é um operador linear no espaço das funções $C^\infty$. O conjunto dos autovalores é todo $\mathbb{R}$, podemos agradecer às funções exponenciais por isso. O conjunto dos autovalores da segunda derivada é $\mathbb{R}$ da mesma forma.
