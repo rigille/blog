@@ -24,7 +24,7 @@ além disso a visão _decoreba vs. entendimento_ me jogou em direções improdut
 
 o que funcionou melhor pra mim é ver como um problema de [__sobreajuste__](https://en.wikipedia.org/wiki/Overfitting)[^1], que é um termo geralmente usado pra falar de modelos estatísticos e de inteligências artificiais. quando estamos aprendendo, estamos criando um modelo mental do que estamos estudando. se esse modelo depende de variáveis demais — por exemplo associando cada frase específica com uma resposta específica — e falha quando você apresenta situações diferentes das incluídas no treinamento, você sobreajustou.
 
-o legal desse ponto de vista é que as pessoas da estatística e do machine learning incorporaram várias técnicas nos algoritmos deles para identificar e evitar problemas de sobreajuste. incluindo algumas que estão lá no artigo da wikipédia e eu não entendo. a mais simples é a que falei. tente vários métodos diferentes, observe quais precisam de muitas variáveis e quais não se saem bem quando você precisa lidar com situações novas. se você tentar métodos o bastante vai convergir para um entendimento mais profundo do assunto.
+o legal desse ponto de vista é que as pessoas da estatística e do machine learning incorporaram várias técnicas nos algoritmos deles para identificar e evitar problemas de sobreajuste. incluindo algumas que estão lá no artigo da wikipédia e eu não entendo. a mais simples é tentar vários modelos diferentes, observar quais precisam de muitas variáveis e quais não se saem bem com situações novas para descartar. tente várias vezes e você vai se aproximar para um entendimento mais profundo do assunto.
 
 $$.$$
 
