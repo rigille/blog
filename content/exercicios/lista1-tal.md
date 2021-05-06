@@ -161,58 +161,91 @@ se traduz como
 
 $\langle \mathbf{x}_i, \mathbf{y}_j \rangle =\ \mathrm{if}\ j = i\ \mathrm{then}\ 0\ \mathrm{else}\ 1$
 
-De fato podemos tirar algumas conclusões disso, por exemplo podemos calcular o valor do produto interno de qualquer combinação linear $\left\langle \sum \lambda_i \mathbf{x}_i, \sum \gamma_j \mathbf{y}_j \right\rangle$. Mas a princípio não está claro, pelo menos para mim, como isso poderia ajudar. A questão nos pede para mostrar que $m \leq n$. Nesse caso, seria muito conveniente concluir que algum dos conjuntos $\\{\mathbf{x}_1, …, \mathbf{x}_m\\}$ ou $\\{\mathbf{y}_1, …, \mathbf{y}_m\\}$ deveria ser LI, porque a dimensão do espaço limita o tamanho do conjunto. Então vamos assumir que são ambos LD, com
+De fato podemos tirar algumas conclusões disso, por exemplo, se considerarmos $\mathbf{X} = [\mathbf{x}_1, …, \mathbf{x}_m]$ e $\mathbf{Y} = [\mathbf{y}_1, …, \mathbf{y}_m]$ temos que:
 
-$$\sum_{i=1}^m \lambda_i \mathbf{x}_i = 0$$
+$$\mathbf{X}^{T}\mathbf{Y} =
+\begin{bmatrix} 0 & 1 & \dots \\\\ 1 & 0 \\\\ \vdots & & \ddots  \\\\ & & & 0 & 1 \\\\ & & & 1 & 0\end{bmatrix} = [\mathrm{if}\ i = j\ \mathrm{then}\ 0\ \mathrm{else}\ 1]_{ij}$$
 
-e
+Seria muito conveniente para nós concluir que essas matrizes não são singulares, que os conjuntos $\\{\mathbf{x}_1, …, \mathbf{x}_m\\}$ e $\\{\mathbf{y}_1, …, \mathbf{y}_m\\}$ são LI, porque a dimensão do espaço limita oria o tamanho do conjunto da forma que gostaríamos. E podemos obter isso concluindo que $\mathbf{X}^T\mathbf{Y}$ é não-singular! Afinal uma matriz é não-singular sse é o produto de matrizes não-singulares. Felizmente esse é o caso, porque se definirmos
 
-$$\sum_{j=1}^m \gamma_j \mathbf{y}_j = 0$$
+$$\mathbf{s} := \sum_{i=1}^m e_i$$
 
-e tentar chegar numa contradição. Pra isso vamos investigar
+como o vetor que tem todas as entradas iguais a $1$, o produto de matrizes se torna.
 
-$$\left\langle \sum_{i=1}^m \lambda_i \mathbf{x}_i, \sum_{j=1}^m \gamma_j \mathbf{y}_j \right\rangle = 0$$
+$$\mathbf{X}^{T}\mathbf{Y} = [\mathbf{s} - e_j]_j$$
 
-só porque sabemos que podemos… Usando a linearidade do produto interno
+agora é suficiente demonstrar que o conjunto desses vetorers é linearmente independente. suponha que existam coeficientes $\alpha_j \in \mathbb{R}$ tais que
 
-$$ \sum_{i=1}^m \sum_{j=1}^m \lambda_i \gamma_j \left\langle\mathbf{x}_i, \mathbf{y}_j \right\rangle = 0$$
+$$\sum_{j = 1}^m \alpha_j(s - e_j) = 0$$
 
-$$ \sum_{i=1}^m \sum_{j=1 \\\\ j \neq i}^m \lambda_i \gamma_j = 0$$
+queremos concluir que, para todo $j$, $\alpha_j = 0$. Reorganizando a equação
 
-Essa expressão não me diz nada, acho que teremos uma chance maior de entendê-la reorganizando.
+$$\left(\sum_{j = 1}^m \alpha_j\right) s = \sum_{j = 1}^m \alpha_j e_j $$
 
-$$ \sum_{i=1}^m \lambda_i \sum_{j=1 \\\\ j \neq i}^m \gamma_j = 0$$
+o lado esquerdo da equação tem todas as coordenadas iguais, logo isso também valerá para o lado direito e, para todo $i$ e $j$, $\alpha_i = \alpha_j := \alpha$. Assim a equação se simplifica mais, para
 
-$$ \sum_{i=1}^m \lambda_i + \left(- \gamma_i + \sum_{j=1}^m \gamma_j\right) = 0$$
+$$m \alpha s = \alpha\mathbf{s} $$
 
-Para aliviar a notação, vamos chamar $\left(\sum_{j=1}^m \gamma_j\right)$ de $s_\gamma$
+o que só é verdade para $\alpha = 0$ quando $m > 1$, como queríamos demonstrar.
 
-$$ \sum_{i=1}^m \lambda_i + \left(- \gamma_i + s_\gamma\right) = 0$$
+## Questão 46 ⭐⭐⭐⭐⭐
 
-$$ \left(\sum_{i=1}^m -\lambda_i\gamma_i\right) + \left(\sum_{i=1}^m s_\gamma \lambda_i \right) = 0$$
+### Enunciado
 
-$$ -\left(\sum_{i=1}^m \lambda_i\gamma_i\right) + \left(\sum_{i=1}^m s_\gamma \lambda_i \right) = 0$$
+Um poliedro é o conjunto solução de um sistema do tipo
 
-$$ -\left(\sum_{i=1}^m \lambda_i\gamma_i\right) + \left(s_\gamma \sum_{i=1}^m \lambda_i \right) = 0$$
+$$a_{11} + \cdots + a_{1n}x_n \leq b_1\\\\
+\vdots \\\\
+a_{m1}x_1 + \cdots + a_{mn}x_n \leq b_m$$
 
-$$ -\left(\sum_{i=1}^m \lambda_i\gamma_i\right) + s_\gamma \left(\sum_{i=1}^m \lambda_i \right) = 0$$
+com variáveis reais. Um **polítopo** é um poliedro limitado. Prove que o fecho convexo de um conjunto finito é um polítopo.
 
-Abreviando da mesma forma $\left(\sum_{i=1}^m \lambda_i\right)$ como $s_\lambda$.
+### Resolução
 
-$$ -\left(\sum_{i=1}^m \lambda_i\gamma_i\right) + s_\gamma s_\lambda = 0$$
+Para resolver essa questão primeiro vamos considerar o **cone gerado** por um conjunto de pontos. No caso, se temos um conjunto de vetores $\mathbf{v}_1, …, \mathbf{v}_d \in \mathbb{R}^n$, o cone gerado é o conjunto dos pontos
 
-$$ s_\gamma s_\lambda = \sum_{i=1}^m \lambda_i\gamma_i$$
+$$ \mathbf{Y}\mathbf{z},\ \mathbf{z} \geq 0$$
 
-Queremos mostrar que isso não acontece, e o podemos estimar o lado da direita com a desigualdade de Cauchy-Schwarz
+onde $\mathbf{Y} = [ v_1, …, v_n ] \in M_{d \times n}$ e $\mathbf{z} \in \mathbb{R}^n$. A ideia é mostrar que o cone gerado pode ser visto como o conjunto de pontos $\mathbf{x} \in \mathbb{R}^d$ tais que, para algum $m$ e alguma matriz $\mathbf{B} \in M_{m \times d}$
 
-$$ \left| \sum_{i=1}^m \lambda_i\gamma_i \right| \leq \sqrt{\sum_{i=1}^m \lambda_i^2} \sqrt{\sum_{i=1}^m \gamma_i^2}$$
+$$ \mathbf{Bx} \leq 0 $$
 
-E podemos estimar os fatores da parcela da esquerda com a desigualdade triangular.
+expressar o conjunto como um sistema de desigualdades. A princípio podemos expressar o conjunto do vetores $[\mathbf{x}\ \mathbf{t}]^T \in \mathbb{R}^{n+d}$ tais que $\mathbf{x} = \mathbf{Yt}$ e $t \geq 0$ como um sistema de desigualdades.
+$$
+\begin{bmatrix} I & -\mathbf{Y} \\\\ -I & \mathbf{Y} \\\\ 0 & -I \end{bmatrix}
+\begin{bmatrix}\mathbf{x} \\\\ \mathbf{t} \end{bmatrix}
+\leq
+0
+$$
 
-$$ |s_\lambda| \geq \sqrt{\sum_{i=1}^m \lambda_i^2}$$
+onde vamos escrever
 
-$$ |s_\gamma| \geq \sqrt{\sum_{i=1}^m \gamma_i^2}$$
+$$ \begin{bmatrix} I & -\mathbf{Y} \\\\ -I & \mathbf{Y} \\\\ 0 & -I \end{bmatrix} = \mathbf{A}$$
 
-sendo que a igualdade só acontece quando $\lambda_i$ e $\gamma_j$ são diferentes de $0$ para apenas um valor de $i$ e de $j$. Temos um sanduíche!
+e a i-ésima linha de $\mathbf{A}$ como $\mathbf{a}_i$ onde $\mathbf{a}_i^T \in \mathbb{R^{n+d}}$ para não carregar a notação.
 
-$$\sqrt{\sum_{i=1}^m \gamma_i^2} \geq |s_\gamma s_\lambda| = \left| \sum_{i=1}^m \lambda_i\gamma_i \right| \geq$$
+agora a ideia é eliminar essas $d$ últimas variáveis do sistema de inequações, que correspondem ao $\mathbf{v}$, enquanto mantemos a equivalência com o sistema original para as variáveis restantes. Isso nos trará a matriz $\mathbf{B}$ que desejamos. Então vamos falar um pouco de
+
+#### Eliminação de Fourier-Motzkin
+
+imagine que estamos considerando o sistema
+
+$$\begin{cases}
+x + 3y \leq 0 \\\\
+x - 2y \leq 0
+\end{cases} \tag{0}$$
+
+podemos eliminar a segunda variável multiplicando a primeira equação por $2$, a segunda por $3$ e somando os resultados. Daí ficaríamos apenas com
+
+$$x \leq 0 \tag{1}$$
+
+essa é a chamada eliminação de Fourier-Motzkin. Por outro lado se, em vez de $(0)$, tivéssemos
+
+$$\begin{cases}
+x + 3y \leq 0 \\\\
+x + 2y \leq 0
+\end{cases} \tag{2}$$
+
+a nossa estratégia não eliminaria o $y$. A multiplicação por número negativo, necessária para o cancelamento, invertiria o sentido da desigualdade e impediria que somássemos os resultados.
+
+Voltando a $(0)$ e $(1)$, será que eles são equivalentes? Certamente qualquer solução de $(0)$, também solucionará $(1)$. Por outro lado, nem toda solução de $(1)$ soluciona $(0)$. Isso é exemplificado pelo par $(0, 1)$. Não vale a recíproca, mas vale algo quase tão bom quanto: para todo $x$ que satisfaz $(1)$ existe $y$ tal que $(x, y)$ é solução de $(0)$
