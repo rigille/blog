@@ -188,6 +188,7 @@ $$m \alpha s = \alpha\mathbf{s} $$
 
 o que só é verdade para $\alpha = 0$ quando $m > 1$, como queríamos demonstrar.
 
+<!--
 ## Questão 46 ⭐⭐⭐⭐⭐
 
 ### Enunciado
@@ -249,3 +250,38 @@ x + 2y \leq 0
 a nossa estratégia não eliminaria o $y$. A multiplicação por número negativo, necessária para o cancelamento, invertiria o sentido da desigualdade e impediria que somássemos os resultados.
 
 Voltando a $(0)$ e $(1)$, será que eles são equivalentes? Certamente qualquer solução de $(0)$, também solucionará $(1)$. Por outro lado, nem toda solução de $(1)$ soluciona $(0)$. Isso é exemplificado pelo par $(0, 1)$. Não vale a recíproca, mas vale algo quase tão bom quanto: para todo $x$ que satisfaz $(1)$ existe $y$ tal que $(x, y)$ é solução de $(0)$
+-->
+
+## Questão 45 ⭐⭐⭐⭐⭐
+
+### Enunciado
+
+Seja $V$ um espaço vetorial sobre um corpo $K$ com $n$ elementos. Suponha que $V_1, …, V_n$ são subespaços de $V$. Mostre que se $V_1 \cup … \cup V_n$ é um subespaço de $V$, então existe um índice $k$ para o qual $V_i \subset V_k$ para todo $i = 1, …, n$.
+
+### Resolução
+
+Vamos mostrar a contrapositiva: assumindo que não existe $k$ tal que $V_i \subset V_k$ para todo $i = 1, …, n$ e mostrando que existe um ponto de $V$ que não está na união. Faremos isso estimando por cima a quantidade de elementos de $V_1 \cup … \cup V_n$ e mostrando que nossa estimativa tem menos elementos que $V$. Nossa primeira observação é que
+
+$$|V_1 \cup … \cup V_n| \leq |V_1| + … + |V_n| \tag{0}$$
+
+Então podemos focar a nossa atenção no tamanho cada subespaço $|V_i|$. A dimensão de $V_i$ é no máximo $q-1$ onde $q := \mathrm{dim}(V)$. Ou seja
+
+$$|V_i| \leq n^{q-1} \tag{1}$$
+
+e
+
+$$|V_1| + … + |V_n| \leq n \cdot n^{q-1} = n^q = |V|$$
+
+quase conseguimos! Se conseguíssemos subtrair $1$ da nossa cota superior, teríamos resolvido a questão. Com certeza dá pra fazer isso. Só vale a igualdade em $(0)$ se os conjuntos forem todos disjuntos! E os espaços vão se intersectar bastante… Em particular, eles vão se intersectar no ponto $0$. Seguindo esse espírito, vamos refinar a nossa estimativa com
+
+$$|V_1 \cup … \cup V_n| \leq 1 + |V_1 \setminus \\{ 0 \\}| + … + |V_n \setminus \\{ 0 \\}| \tag{2}$$
+
+e com
+
+$$|V_i \setminus \\{ 0 \\}| \leq n^{q-1} - 1 \tag{3}$$
+
+obtendo
+
+$$1 + |V_1 \setminus \\{ 0 \\}| + … + |V_n \setminus \\{ 0 \\}| \leq 1 + n \cdot (n^{q-1} - 1) < n^q = |V|$$
+
+o que conclui a demonstração.

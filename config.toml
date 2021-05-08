@@ -3,7 +3,6 @@ languageCode = "pt-br"
 title = "dessages"
 theme = "hugo-theme-codex"
 
-
 [params]
 twitter = "https://twitter.com/impression28"
 github = "https://github.com/impression28"
