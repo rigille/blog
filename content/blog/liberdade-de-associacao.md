@@ -4,7 +4,7 @@ date: 2021-06-09T00:55:00-03:00
 slug: ""
 description: "indução em expressões"
 keywords: []
-draft: false
+draft: true
 tags: []
 math: true
 toc: false
