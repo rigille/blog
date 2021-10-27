@@ -40,3 +40,14 @@ Test: String
 
 Replace `?hole` in line 1 with `"hello, world!"` and press the typecheck button at the top right. If you get an ok then press run. Now if you see "hello, world!" showing up congratulations! You wrote your first program. That makes you a Kind programmer — welcome!
 
+Our program has three main parts
+```
+_Test_: String
+  "hello, world!"
+```
+`Test` is the name of our program. We called it like that because we were just testing something. However we could have a name that tells us more. For example
+```
+Cutest: String
+  "Mélani"
+```
+Now the program is the name of my cat, Mélani, which is of course the cutest thing in the world.
