@@ -1,5 +1,4 @@
----
-heading: "olá, sou rígille"
-subheading: "⬅️  bem-vindo a dessages"
-handle: "rigille"
----
++++
+paginate_by = 5
+sort_by = "date"
++++

@@ -1,37 +1,29 @@
-baseURL = "https://rigille.github.io"
-languageCode = "pt-br"
-title = "dessages"
-theme = "hugo-theme-codex"
-disqusShortname = "rigille"
+# The URL the site will be built for
+base_url = "https://www.rigille.com"
 
-[params]
-twitter = "https://twitter.com/impression28"
-github = "https://github.com/impression28"
-iconOrder = ["GitHub", "Twitter"]
+compile_sass = true
+title = "Rígille's Blog"
+description = "A clean, responsive theme"
+generate_feed = true
 
-[[menu.main]]
-identifier = "sobre"
-name = "sobre"
-title = "sobre"
-url = "/"
+taxonomies = [
+    {name = "categories", feed = true},
+    {name = "tags", feed = true},
+]
 
-[[menu.main]]
-identifier = "blog"
-name = "blog"
-title = "blog"
-url = "/blog"
+[markdown]
+highlight_code = true
+highlight_theme = "css"
 
-[[menu.main]]
-identifier = "exercicios"
-name = "exercicios"
-title = "exercicios"
-url = "/exercicios"
+[extra]
+author = "Rígille S. B. Menezes"
+even_menu = [
+    {url = "$BASE_URL", name = "Home"},
+    {url = "$BASE_URL/categories", name = "Categories"},
+    {url = "$BASE_URL/tags", name = "Tags"},
+    {url = "$BASE_URL/about", name = "About"},
+]
 
-[[menu.main]]
-identifier = "guia"
-name = "guia"
-title = "guia"
-url = "/guia"
-
-[params.colors]
-fancy = "#ffaa00"
+even_title = "Rígille's Blog"
+katex_enable = true
+katex_auto_render = true
