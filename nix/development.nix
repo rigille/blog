@@ -10,6 +10,7 @@
         name = "ilanjoselevich.com";
         packages = with pkgs; [
           zola
+          wrangler
           nodePackages.gramma
         ];
         shellHook = ''

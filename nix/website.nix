@@ -7,13 +7,15 @@
     in
     {
       packages.default = pkgs.stdenvNoCC.mkDerivation {
-        pname = "ilanjoselevich-website";
+        pname = "rigille-website";
         version = (builtins.substring 0 8 self.lastModifiedDate);
         src = inputs.nix-filter.lib {
           root = self;
           include = [
             (inputs.nix-filter.lib.inDirectory "content")
             (inputs.nix-filter.lib.inDirectory "static")
+            (inputs.nix-filter.lib.inDirectory "templates")
+            (inputs.nix-filter.lib.inDirectory "sass")
             "config.toml"
           ];
         };

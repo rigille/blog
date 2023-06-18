@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://www.rigille.com"
+base_url = "https://rigille.pages.dev"
 
 compile_sass = true
 title = "Rígille's Blog"
