@@ -2,7 +2,7 @@
 title = "Constructed Mathematics"
 weight = 1
 order = 1
-date = 2023-06-18
+date = 2023-06-24
 insert_anchor_links = "right"
 [taxonomies]
 categories = ["Topology"]
