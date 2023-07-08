@@ -1,5 +1,5 @@
 +++
-title = "Constructed Mathematics"
+title = "Constructed mathematics"
 weight = 1
 order = 1
 date = 2023-06-24
