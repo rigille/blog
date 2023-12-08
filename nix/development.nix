@@ -7,7 +7,7 @@
     in
     {
       devShells.default = pkgs.mkShellNoCC rec {
-        name = "ilanjoselevich.com";
+        name = "rigille.com";
         packages = with pkgs; [
           zola
           wrangler
